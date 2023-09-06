@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sarah",
+    "rating": 4,
+    "comment": "Avatar is an epic sci-fi adventure that takes you to a breathtaking world filled with stunning visuals and unforgettable characters. The story is engaging and the action scenes are thrilling. A must-watch for any movie lover!",
+    "timestamp": "2023-01-12T14:45:00Z"
+  },
+  {
+    "name": "Michael",
+    "rating": 3,
+    "comment": "Avatar is a visually stunning movie with a well-crafted story that explores important themes. However, the characters could have been developed more and some parts of the plot feel a bit predictable.",
+    "timestamp": "2023-02-25T16:20:00Z"
+  }
+]

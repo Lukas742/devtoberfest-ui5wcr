@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Emily",
+    "rating": 5,
+    "comment": "Star Wars Ep. VIII: The Last Jedi is a visually stunning and emotionally powerful addition to the franchise. The action is intense, the characters are well-developed, and the story is full of surprises. A must-see for any Star Wars fan.",
+    "timestamp": "2023-03-10T12:30:00Z"
+  },
+  {
+    "name": "Michael",
+    "rating": 4,
+    "comment": "Star Wars Ep. VIII: The Last Jedi is a great movie that delivers on the action and spectacle, but also takes time to explore the characters and their motivations. The visuals are stunning, the music is epic, and the story is full of twists and turns. Highly recommended for fans of the franchise.",
+    "timestamp": "2023-05-25T14:45:00Z"
+  },
+  {
+    "name": "Amanda",
+    "rating": 3,
+    "comment": "Star Wars Ep. VIII: The Last Jedi is a solid addition to the franchise, but it falls short of the high expectations set by its predecessors. The pacing is uneven, some plot points feel forced, and the humor can be hit or miss. Still, it's worth watching for the impressive visuals and exciting action scenes.",
+    "timestamp": "2023-08-08T16:15:00Z"
+  }
+]

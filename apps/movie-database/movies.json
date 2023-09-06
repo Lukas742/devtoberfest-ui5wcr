@@ -1,0 +1,446 @@
+[
+  {
+    "id": "1",
+    "year": 2009,
+    "title": "Avatar",
+    "revenue": 2923706026,
+    "actors": [
+      {
+        "name": "Sam Worthington",
+        "character": "Jake Sully"
+      },
+      {
+        "name": "Zoe Saldana",
+        "character": "Neytiri"
+      },
+      {
+        "name": "Sigourney Weaver",
+        "character": "Dr. Grace Augustine"
+      }
+    ],
+    "summary": "In the distant future, a paraplegic Marine named Jake Sully becomes part of the Avatar Program on the lush planet of Pandora. As he infiltrates the Na'vi people to gather information for the human mining operation, Jake forms a deep bond with Neytiri, a young Na'vi warrior. Torn between following orders and protecting the indigenous people, Jake finds himself at the center of a conflict that will change the fate of Pandora forever.\n\nSet against the backdrop of an alien world filled with stunning landscapes and unique creatures, 'Avatar' is a visual masterpiece that explores themes of environmentalism, corporate greed, and the clash of civilizations. Director James Cameron's visionary storytelling and groundbreaking technology made this film a cultural phenomenon."
+  },
+  {
+    "id": "2",
+    "year": 2019,
+    "title": "Avengers: Endgame",
+    "revenue": 2788912285,
+    "actors": [
+      {
+        "name": "Robert Downey Jr.",
+        "character": "Tony Stark / Iron Man"
+      },
+      {
+        "name": "Chris Evans",
+        "character": "Steve Rogers / Captain America"
+      },
+      {
+        "name": "Mark Ruffalo",
+        "character": "Bruce Banner / Hulk"
+      },
+      {
+        "name": "Chris Hemsworth",
+        "character": "Thor"
+      },
+      {
+        "name": "Scarlett Johansson",
+        "character": "Natasha Romanoff / Black Widow"
+      }
+    ],
+    "summary": "Avengers: Endgame brings the Marvel Cinematic Universe's epic Infinity Saga to a thrilling conclusion. After the devastating events of Infinity War, the surviving heroes must come together for one last, desperate mission to undo the actions of Thanos. With time-travel, unexpected reunions, and epic battles, this film is a rollercoaster ride of emotions and action as the Avengers fight to save the universe itself.\n\nSpanning multiple timelines and featuring a star-studded cast of superheroes, 'Avengers: Endgame' explores themes of sacrifice, friendship, and the enduring spirit of heroism. Directed by Anthony and Joe Russo, this blockbuster spectacle is a fitting tribute to the characters and stories that have defined the MCU."
+  },
+  {
+    "id": "3",
+    "year": 2022,
+    "title": "Avatar: The Way of Water",
+    "revenue": 2319591720,
+    "actors": [
+      {
+        "name": "Sam Worthington",
+        "character": "Jake Sully"
+      },
+      {
+        "name": "Zoe Saldana",
+        "character": "Neytiri"
+      },
+      {
+        "name": "Sigourney Weaver",
+        "character": "Dr. Grace Augustine"
+      }
+    ],
+    "summary": "Return to the enchanting world of Pandora in Avatar: The Way of Water. This sequel follows Jake Sully and Neytiri as they explore new regions of the planet and face new threats. With stunning visuals and a captivating story, this film continues to explore the themes of environmentalism and the connection between humans and nature.\n\nDirected once again by James Cameron, 'Avatar: The Way of Water' delves deeper into the mysteries of Pandora's oceans, revealing new wonders and challenges. As Jake and Neytiri's journey unfolds, they discover that the planet's ecosystem is more fragile than they imagined, and they must confront powerful forces that threaten their way of life. The film is a visual feast that combines groundbreaking technology with a compelling narrative."
+  },
+  {
+    "id": "4",
+    "year": 1997,
+    "title": "Titanic",
+    "revenue": 2222985568,
+    "actors": [
+      {
+        "name": "Leonardo DiCaprio",
+        "character": "Jack Dawson"
+      },
+      {
+        "name": "Kate Winslet",
+        "character": "Rose DeWitt Bukater"
+      },
+      {
+        "name": "Billy Zane",
+        "character": "Caledon 'Cal' Hockley"
+      }
+    ],
+    "summary": "James Cameron's 'Titanic' is an epic romance and disaster film set against the backdrop of the ill-fated maiden voyage of the RMS Titanic. The story follows the passionate but doomed love affair between Jack Dawson, a penniless artist, and Rose DeWitt Bukater, a young aristocrat, as they board the luxurious ship in 1912. Their love is tested when the Titanic collides with an iceberg, leading to one of the most tragic maritime disasters in history.\n\nAs the ship sinks, Jack and Rose must fight for their lives amidst chaos and despair. 'Titanic' is a timeless tale of love, sacrifice, and the human spirit's resilience in the face of adversity. The film combines breathtaking visuals, a haunting musical score, and stellar performances by Leonardo DiCaprio and Kate Winslet to create an unforgettable cinematic experience."
+  },
+  {
+    "id": "5",
+    "year": 2015,
+    "title": "Star Wars Ep. VII: The Force Awakens",
+    "revenue": 2064615817,
+    "actors": [
+      {
+        "name": "Daisy Ridley",
+        "character": "Rey"
+      },
+      {
+        "name": "John Boyega",
+        "character": "Finn"
+      },
+      {
+        "name": "Oscar Isaac",
+        "character": "Poe Dameron"
+      }
+    ],
+    "summary": "Set 30 years after the events of 'Return of the Jedi,' 'Star Wars Ep. VII: The Force Awakens' introduces a new generation of heroes and villains to the iconic galaxy far, far away. Rey, a scavenger on the desert planet Jakku, crosses paths with Finn, a disillusioned stormtrooper, and Poe Dameron, a Resistance pilot. Together, they embark on a journey that leads them to the legendary Luke Skywalker and a dark new threat known as the First Order.\n\nDirected by J.J. Abrams, the film pays homage to the original Star Wars trilogy while introducing fresh characters and exciting adventures. With a mix of practical effects and cutting-edge CGI, 'The Force Awakens' captures the magic and spirit of the beloved franchise, setting the stage for a new era of Star Wars storytelling."
+  },
+  {
+    "id": "6",
+    "year": 2018,
+    "title": "Avengers: Infinity War",
+    "revenue": 2048359754,
+    "actors": [
+      {
+        "name": "Robert Downey Jr.",
+        "character": "Tony Stark / Iron Man"
+      },
+      {
+        "name": "Chris Hemsworth",
+        "character": "Thor"
+      },
+      {
+        "name": "Mark Ruffalo",
+        "character": "Bruce Banner / Hulk"
+      },
+      {
+        "name": "Chris Evans",
+        "character": "Steve Rogers / Captain America"
+      },
+      {
+        "name": "Scarlett Johansson",
+        "character": "Natasha Romanoff / Black Widow"
+      }
+    ],
+    "summary": "In 'Avengers: Infinity War,' the Marvel Cinematic Universe faces its most formidable threat yet: Thanos, a powerful cosmic being determined to obtain all six Infinity Stones and reshape the universe in his image. The film brings together the Avengers, the Guardians of the Galaxy, and other heroes from across the cosmos in a desperate battle to stop Thanos from carrying out his genocidal plan.\n\nDirected by Anthony and Joe Russo, 'Infinity War' is a high-stakes, action-packed epic that explores themes of sacrifice, heroism, and the consequences of absolute power. With a complex narrative that weaves together multiple storylines, the film keeps audiences on the edge of their seats while delivering emotional and visual spectacle on a grand scale."
+  },
+  {
+    "id": "7",
+    "year": 2021,
+    "title": "Spider-Man: No Way Home",
+    "revenue": 1910048245,
+    "actors": [
+      {
+        "name": "Tom Holland",
+        "character": "Peter Parker / Spider-Man"
+      },
+      {
+        "name": "Zendaya",
+        "character": "MJ (Michelle Jones)"
+      },
+      {
+        "name": "Benedict Cumberbatch",
+        "character": "Doctor Strange"
+      }
+    ],
+    "summary": "In 'Spider-Man: No Way Home,' Peter Parker's life takes a chaotic turn when his secret identity as Spider-Man is exposed to the world. Seeking help from Doctor Strange, Peter asks for a spell to erase everyone's memory of him as the web-slinger, but the spell goes awry, opening rifts in the multiverse. As villains from other dimensions start appearing in his world, Peter teams up with other Spider-People from alternate realities to stop the looming threat.\n\nDirected by Jon Watts, the film explores themes of identity, responsibility, and the consequences of tampering with reality. 'No Way Home' is a thrilling and emotional chapter in Spider-Man's journey, connecting the character to a wider multiverse of possibilities and challenges."
+  },
+  {
+    "id": "8",
+    "year": 2015,
+    "title": "Jurassic World",
+    "revenue": 1669963641,
+    "actors": [
+      {
+        "name": "Chris Pratt",
+        "character": "Owen Grady"
+      },
+      {
+        "name": "Bryce Dallas Howard",
+        "character": "Claire Dearing"
+      },
+      {
+        "name": "Irrfan Khan",
+        "character": "Simon Masrani"
+      }
+    ],
+    "summary": "In 'Jurassic World,' a new dinosaur theme park on the Isla Nublar is fully operational and thriving. However, when scientists create a genetically modified dinosaur called the Indominus rex, things take a deadly turn. As the hybrid creature escapes and wreaks havoc, park ranger Owen Grady and park manager Claire Dearing must work together to prevent a catastrophic disaster.\n\nDirected by Colin Trevorrow, 'Jurassic World' pays homage to the original 'Jurassic Park' while introducing new elements to the franchise. The film explores themes of genetic engineering, the consequences of playing with nature, and the awe-inspiring wonder of dinosaurs brought back to life. With thrilling action sequences and impressive visual effects, 'Jurassic World' reawakens the excitement of the Jurassic Park series."
+  },
+  {
+    "id": "9",
+    "year": 2019,
+    "title": "The Lion King",
+    "revenue": 1647733638,
+    "actors": [
+      {
+        "name": "Donald Glover",
+        "character": "Simba"
+      },
+      {
+        "name": "Beyoncé",
+        "character": "Nala"
+      },
+      {
+        "name": "James Earl Jones",
+        "character": "Mufasa"
+      }
+    ],
+    "summary": "The classic tale of 'The Lion King' returns in a visually stunning live-action adaptation. Simba, a young lion cub, faces a challenging journey from exile to reclaiming his rightful place as the king of the Pride Lands. Alongside his friends Timon and Pumbaa, Simba must confront his past and battle the treacherous Scar, who has taken control of the kingdom.\n\nDirected by Jon Favreau, the film brings beloved characters to life with breathtaking realism and reimagines iconic moments from the original animated classic. With the voices of Donald Glover, Beyoncé, and James Earl Jones, 'The Lion King' is a nostalgic and heartwarming reimagining that captures the magic and emotion of the original while adding new depth and dimension to the story."
+  },
+  {
+    "id": "10",
+    "year": 2012,
+    "title": "The Avengers",
+    "revenue": 1515100211,
+    "actors": [
+      {
+        "name": "Robert Downey Jr.",
+        "character": "Tony Stark / Iron Man"
+      },
+      {
+        "name": "Chris Evans",
+        "character": "Steve Rogers / Captain America"
+      },
+      {
+        "name": "Mark Ruffalo",
+        "character": "Bruce Banner / Hulk"
+      },
+      {
+        "name": "Chris Hemsworth",
+        "character": "Thor"
+      },
+      {
+        "name": "Scarlett Johansson",
+        "character": "Natasha Romanoff / Black Widow"
+      }
+    ],
+    "summary": "In 'The Avengers,' the world's greatest heroes are brought together to save the Earth from a powerful threat. When Loki, the adopted brother of Thor, seeks to conquer Earth with the help of the cosmic artifact known as the Tesseract, Nick Fury, director of S.H.I.E.L.D., assembles a team of extraordinary individuals. Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye must put aside their differences and work together to thwart Loki's plans.\n\nDirected by Joss Whedon, the film marks the first major crossover in the Marvel Cinematic Universe and sets the stage for a new era of superhero storytelling. 'The Avengers' is a thrilling and action-packed spectacle that explores the dynamics of a diverse group of heroes while laying the groundwork for future interconnected adventures."
+  },
+  {
+    "id": "11",
+    "year": 2015,
+    "title": "Furious 7",
+    "revenue": 1511986364,
+    "actors": [
+      {
+        "name": "Vin Diesel",
+        "character": "Dominic Toretto"
+      },
+      {
+        "name": "Paul Walker",
+        "character": "Brian O'Conner"
+      },
+      {
+        "name": "Dwayne Johnson",
+        "character": "Luke Hobbs"
+      }
+    ],
+    "summary": "In 'Furious 7,' the Fast & Furious crew faces a vengeful assassin and a high-stakes mission. After defeating Owen Shaw, the team is targeted by his brother, Deckard Shaw, who seeks revenge. To stop Shaw and protect their own, Dominic Toretto, Brian O'Conner, and their crew must undertake a dangerous mission to retrieve a powerful surveillance device known as 'God's Eye.'\n\nDirected by James Wan, the film combines adrenaline-pumping action sequences with heartfelt moments as the characters grapple with loss and loyalty. 'Furious 7' pays tribute to the late Paul Walker, who tragically passed away during production, in a poignant and emotional send-off that honors his contributions to the franchise."
+  },
+  {
+    "id": "12",
+    "year": 2022,
+    "title": "Top Gun: Maverick",
+    "revenue": 1475283299,
+    "actors": [
+      {
+        "name": "Tom Cruise",
+        "character": "Maverick"
+      },
+      {
+        "name": "Miles Teller",
+        "character": "Bradley 'Rooster' Bradshaw"
+      },
+      {
+        "name": "Jennifer Connelly",
+        "character": "Penny Benjamin"
+      }
+    ],
+    "summary": "Maverick returns as a flight instructor, training the next generation of fighter pilots. The sequel to the iconic 'Top Gun' finds Pete 'Maverick' Mitchell confronting his past and mentoring a new group of Top Gun graduates, including Bradley 'Rooster' Bradshaw, the son of Maverick's late best friend and Radar Intercept Officer, Nick 'Goose' Bradshaw. As Maverick faces the challenges of a changing aviation landscape, he must inspire his trainees and confront his own legacy.\n\nDirected by Joseph Kosinski, 'Top Gun: Maverick' delivers exhilarating aerial sequences and explores themes of mentorship, camaraderie, and the enduring spirit of naval aviation. Tom Cruise reprises his role as Maverick in this long-awaited sequel that continues the legacy of the 1986 classic."
+  },
+  {
+    "id": "13",
+    "year": 2019,
+    "title": "Frozen II",
+    "revenue": 1453683476,
+    "actors": [
+      {
+        "name": "Kristen Bell",
+        "character": "Anna"
+      },
+      {
+        "name": "Idina Menzel",
+        "character": "Elsa"
+      },
+      {
+        "name": "Josh Gad",
+        "character": "Olaf"
+      }
+    ],
+    "summary": "Anna, Elsa, and their friends embark on a journey to discover the truth about Elsa's powers. In 'Frozen II,' the kingdom of Arendelle faces a new threat as the elemental spirits awaken, plunging the land into chaos. Elsa, the Snow Queen, must confront her past and venture into the enchanted forest to uncover the origin of her magical abilities.\n\nDirected by Chris Buck and Jennifer Lee, the film continues to explore the bond between sisters Anna and Elsa while introducing new characters and enchanting songs. 'Frozen II' takes audiences on an epic adventure filled with magic, mystery, and self-discovery. With themes of empowerment and the importance of embracing one's true self, the film resonates with audiences of all ages."
+  },
+  {
+    "id": "14",
+    "year": 2015,
+    "title": "Avengers: Age of Ultron",
+    "revenue": 1395316979,
+    "actors": [
+      {
+        "name": "Robert Downey Jr.",
+        "character": "Tony Stark / Iron Man"
+      },
+      {
+        "name": "Chris Hemsworth",
+        "character": "Thor"
+      },
+      {
+        "name": "Mark Ruffalo",
+        "character": "Bruce Banner / Hulk"
+      },
+      {
+        "name": "Chris Evans",
+        "character": "Steve Rogers / Captain America"
+      },
+      {
+        "name": "Scarlett Johansson",
+        "character": "Natasha Romanoff / Black Widow"
+      }
+    ],
+    "summary": "The Avengers face a new threat when Tony Stark's peacekeeping program goes awry. In 'Avengers: Age of Ultron,' Stark and Banner attempt to create an artificial intelligence to protect the world, but their creation, Ultron, turns against them. Now, Earth's mightiest heroes must stop Ultron and face new challenges, including the emergence of the powerful Maximoff twins, Wanda and Pietro.\n\nDirected by Joss Whedon, the film explores the consequences of unchecked power and the bonds of friendship among the Avengers. With thrilling action sequences, character development, and the introduction of new heroes, 'Age of Ultron' adds depth to the MCU's evolving narrative."
+  },
+  {
+    "id": "15",
+    "year": 2023,
+    "title": "The Super Mario Bros. Movie",
+    "revenue": 1359266433,
+    "actors": [
+      {
+        "name": "Chris Pratt",
+        "character": "Mario"
+      },
+      {
+        "name": "Anya Taylor-Joy",
+        "character": "Princess Peach"
+      },
+      {
+        "name": "Charlie Day",
+        "character": "Luigi"
+      }
+    ],
+    "summary": "Mario and Luigi embark on a colorful adventure to rescue Princess Peach from King Bowser. In 'The Super Mario Bros. Movie,' the iconic video game characters Mario and Luigi are thrust into a parallel dimension where they must save Princess Peach from the clutches of the nefarious King Bowser. Along the way, they encounter familiar friends and foes, including Yoshi, Toad, and the mischievous minions.\n\nDirected by Aaron Horvath and Michael Jelenic, the film brings the beloved Nintendo characters to life in a zany and whimsical animated world. With humor, action, and a dose of nostalgia, 'The Super Mario Bros. Movie' captures the essence of the classic video games while delivering a new and entertaining cinematic experience."
+  },
+  {
+    "id": "16",
+    "year": 2023,
+    "title": "Barbie",
+    "revenue": 1342695173,
+    "actors": [
+      {
+        "name": "Margot Robbie",
+        "character": "Barbie"
+      }
+    ],
+    "summary": "Barbie's world turns upside down when she gets kicked out of Barbieland. In 'Barbie,' Margot Robbie brings the iconic doll to life in a live-action comedy-adventure. Barbie, a resident of Barbieland, is expelled from her perfect world for not fitting in. She embarks on an adventure in the real world, where she discovers that being unique is an asset. Along the way, she forms new friendships and navigates the challenges of the human world, all while staying true to herself.\n\nDirected by Greta Gerwig, 'Barbie' is a contemporary reimagining of the beloved toy line, promoting self-acceptance and individuality. With humor, heart, and a message of empowerment, the film celebrates the importance of being true to one's identity and embracing differences."
+  },
+  {
+    "id": "17",
+    "year": 2018,
+    "title": "Black Panther",
+    "revenue": 1336494320,
+    "actors": [
+      {
+        "name": "Chadwick Boseman",
+        "character": "T'Challa / Black Panther"
+      },
+      {
+        "name": "Michael B. Jordan",
+        "character": "Erik Killmonger"
+      },
+      {
+        "name": "Lupita Nyong'o",
+        "character": "Nakia"
+      }
+    ],
+    "summary": "T'Challa must rise as the Black Panther to defend Wakanda from a powerful enemy. In 'Black Panther,' T'Challa returns to the technologically advanced African nation of Wakanda after the death of his father. As the new king and protector of Wakanda, he must face challenges from within and outside the nation, including Erik Killmonger, a formidable adversary with a personal vendetta.\n\nDirected by Ryan Coogler, the film explores themes of identity, heritage, and the responsibilities of leadership. 'Black Panther' is a groundbreaking entry in the superhero genre, celebrating African culture and representation while delivering thrilling action and a complex narrative. Chadwick Boseman's portrayal of T'Challa resonated with audiences worldwide, making the character a symbol of heroism and inspiration."
+  },
+  {
+    "id": "18",
+    "year": 2017,
+    "title": "Star Wars Ep. VIII: The Last Jedi",
+    "revenue": 1331635141,
+    "actors": [
+      {
+        "name": "Daisy Ridley",
+        "character": "Rey"
+      },
+      {
+        "name": "John Boyega",
+        "character": "Finn"
+      },
+      {
+        "name": "Oscar Isaac",
+        "character": "Poe Dameron"
+      }
+    ],
+    "summary": "In 'Star Wars Ep. VIII: The Last Jedi,' the Resistance faces dire challenges as the First Order closes in. Rey seeks the guidance of Jedi Master Luke Skywalker, while the remnants of the Resistance fight for survival. Meanwhile, Kylo Ren grapples with his inner conflicts, torn between his past and his destiny.\n\nDirected by Rian Johnson, the film takes the Star Wars saga in unexpected directions, exploring themes of legacy, redemption, and the nature of the Force. 'The Last Jedi' challenges the conventions of the franchise while delivering epic battles and emotional depth. With iconic characters and surprising twists, it continues the legacy of a galaxy far, far away."
+  },
+  {
+    "id": "19",
+    "year": 2011,
+    "title": "Harry Potter and the Deathly Hallows: Part II",
+    "revenue": 1315363647,
+    "actors": [
+      {
+        "name": "Daniel Radcliffe",
+        "character": "Harry Potter"
+      },
+      {
+        "name": "Emma Watson",
+        "character": "Hermione Granger"
+      },
+      {
+        "name": "Rupert Grint",
+        "character": "Ron Weasley"
+      }
+    ],
+    "summary": "The epic saga of Harry Potter concludes in 'Deathly Hallows: Part II.' As Harry, Ron, and Hermione race against time to destroy the remaining Horcruxes and defeat Voldemort, the final battle for Hogwarts and the wizarding world unfolds. The fate of all hangs in the balance as friendships are tested, sacrifices are made, and the ultimate showdown between good and evil takes place.\n\nDirected by David Yates, the film delivers an epic and emotionally charged conclusion to the Harry Potter series. 'Deathly Hallows: Part II' is a masterful blend of action, magic, and heart, as it explores themes of bravery, love, and the enduring power of hope."
+  },
+  {
+    "id": "20",
+    "year": 2018,
+    "title": "Jurassic World: Fallen Kingdom",
+    "revenue": 1308323302,
+    "actors": [
+      {
+        "name": "Chris Pratt",
+        "character": "Owen Grady"
+      },
+      {
+        "name": "Bryce Dallas Howard",
+        "character": "Claire Dearing"
+      },
+      {
+        "name": "Jeff Goldblum",
+        "character": "Dr. Ian Malcolm"
+      }
+    ],
+    "summary": "In 'Jurassic World: Fallen Kingdom,' Owen Grady and Claire Dearing return to Isla Nublar to rescue the remaining dinosaurs from an impending volcanic eruption. However, they soon discover a dark conspiracy that threatens the future of all species. With the help of old and new allies, they must prevent the dinosaurs from falling into the wrong hands.\n\nDirected by J.A. Bayona, the film combines thrilling dinosaur action with ethical dilemmas surrounding genetic engineering and the consequences of human interference in nature. 'Fallen Kingdom' takes the Jurassic Park franchise in a new direction, exploring the moral complexities of preserving these ancient creatures while facing the dangers they pose to humanity."
+  }
+]

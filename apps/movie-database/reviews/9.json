@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jessica",
+    "rating": 5,
+    "comment": "The Lion King is a timeless classic that still holds up today. The story is emotional and well-crafted, the music is iconic, and the animation is stunning. A must-watch for any Disney fan or anyone who loves great storytelling.",
+    "timestamp": "2023-02-18T12:15:00Z"
+  },
+  {
+    "name": "Mark",
+    "rating": 4,
+    "comment": "The Lion King is a great movie that captures the spirit of the African savanna and tells a powerful story about family, responsibility, and destiny. The animation is beautiful, the music is memorable, and the characters are unforgettable.",
+    "timestamp": "2023-04-05T14:30:00Z"
+  }
+]

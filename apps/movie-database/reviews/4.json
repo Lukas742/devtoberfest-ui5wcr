@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Olivia",
+    "rating": 5,
+    "comment": "Titanic is a timeless classic that never fails to captivate audiences. The movie has a beautiful love story, stunning visuals, and great performances from the cast. A must-watch for anyone who loves romance or drama.",
+    "timestamp": "2023-05-02T13:30:00Z"
+  },
+  {
+    "name": "John",
+    "rating": 4,
+    "comment": "Titanic is a cinematic masterpiece that tells a tragic and unforgettable story. The movie has great visuals, music, and acting, and it will leave you with a heavy heart. A must-watch for anyone who appreciates great filmmaking.",
+    "timestamp": "2023-07-18T14:45:00Z"
+  }
+]

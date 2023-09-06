@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sarah",
+    "rating": 2,
+    "comment": "The Super Mario Bros. Movie is a disappointing adaptation of the beloved video game franchise. The plot is convoluted and nonsensical, the characters are poorly developed, and the special effects are underwhelming. Not recommended for fans of the game.",
+    "timestamp": "2023-02-24T10:30:00Z"
+  },
+  {
+    "name": "Mike",
+    "rating": 1,
+    "comment": "The Super Mario Bros. Movie is a complete mess that fails to capture the charm and fun of the video game series. The plot is confusing and nonsensical, the acting is wooden, and the special effects are terrible. Avoid at all costs.",
+    "timestamp": "2023-06-07T14:45:00Z"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Rachel",
+    "rating": 5,
+    "comment": "Black Panther is a groundbreaking and phenomenal movie that pushes the boundaries of the superhero genre. The cast is exceptional, the visuals are stunning, and the story is powerful and thought-provoking. A must-watch for anyone who loves movies.",
+    "timestamp": "2023-03-03T14:30:00Z"
+  },
+  {
+    "name": "David",
+    "rating": 4,
+    "comment": "Black Panther is an excellent movie that's both entertaining and socially relevant. The cast is fantastic, the action is thrilling, and the themes of identity and heritage are explored in a meaningful way. Highly recommended for fans of the genre.",
+    "timestamp": "2023-05-18T16:45:00Z"
+  },
+  {
+    "name": "Jessica",
+    "rating": 3,
+    "comment": "Black Panther is a solid superhero movie that has a lot of great elements, but doesn't quite live up to the hype. The cast is great, the visuals are impressive, and the story is interesting, but there are some pacing issues and the villain is a bit underdeveloped. Still worth watching though.",
+    "timestamp": "2023-08-02T18:15:00Z"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Rachel",
+    "rating": 4,
+    "comment": "Jurassic World: Fallen Kingdom is a fun and thrilling addition to the franchise. The special effects are impressive, the action is intense, and the new dinosaurs are exciting. The only downside is that the story can feel a bit contrived at times.",
+    "timestamp": "2023-02-10T14:30:00Z"
+  },
+  {
+    "name": "Tom",
+    "rating": 3,
+    "comment": "Jurassic World: Fallen Kingdom is a decent movie that delivers on the action and dinosaur thrills, but it falls short in terms of story and character development. The plot feels a bit recycled, the characters are underdeveloped, and the ending is unsatisfying. Still, it's worth watching for the impressive visuals.",
+    "timestamp": "2023-04-28T16:15:00Z"
+  },
+  {
+    "name": "Jessica",
+    "rating": 2,
+    "comment": "Jurassic World: Fallen Kingdom is a disappointing addition to the franchise. The story is predictable, the characters are forgettable, and the dinosaur action is repetitive. It's a shame to see such a promising franchise go downhill like this.",
+    "timestamp": "2023-08-12T18:45:00Z"
+  }
+]

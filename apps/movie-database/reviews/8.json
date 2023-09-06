@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Ashley",
+    "rating": 4,
+    "comment": "Jurassic World is a thrilling movie that brings the iconic dinosaurs back to the big screen in a big way. The action is intense, the visuals are stunning, and the story is engaging. A great movie for anyone who loves dinosaurs or action movies.",
+    "timestamp": "2023-03-10T14:30:00Z"
+  },
+  {
+    "name": "Tyler",
+    "rating": 3,
+    "comment": "Jurassic World is a decent movie that delivers on the thrills and excitement that you would expect from a dinosaur movie. The plot can be a bit predictable at times, but the action and special effects are still impressive.",
+    "timestamp": "2023-05-25T16:45:00Z"
+  }
+]

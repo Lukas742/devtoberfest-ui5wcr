@@ -1,0 +1,20 @@
+[
+  {
+    "name": "David",
+    "rating": 5,
+    "comment": "Harry Potter and the Deathly Hallows: Part II is a thrilling and satisfying conclusion to the beloved franchise. The acting is superb, the special effects are impressive, and the story ties up all the loose ends in a satisfying way. A must-watch for any Harry Potter fan.",
+    "timestamp": "2023-01-15T09:30:00Z"
+  },
+  {
+    "name": "Sarah",
+    "rating": 4,
+    "comment": "Harry Potter and the Deathly Hallows: Part II is a great movie that does justice to the source material. The action is intense, the emotional moments are powerful, and the ending is satisfying. The only downside is that it's the end of the series!",
+    "timestamp": "2023-04-05T11:45:00Z"
+  },
+  {
+    "name": "John",
+    "rating": 3,
+    "comment": "Harry Potter and the Deathly Hallows: Part II is a solid movie that delivers on the action and spectacle, but it can feel a bit rushed at times. Some plot points are left unexplained and some characters feel underused. Still, it's a satisfying conclusion to the series.",
+    "timestamp": "2023-07-20T13:15:00Z"
+  }
+]

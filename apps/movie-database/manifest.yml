@@ -1,0 +1,10 @@
+---
+applications:
+  - name: movie-database
+    routes:
+      - route: "https://devtoberfest-movie-database.cfapps.eu10-004.hana.ondemand.com"
+    buildpacks:
+      - https://github.com/cloudfoundry/nodejs-buildpack.git
+    stack: cflinuxfs4
+    memory: 256MB
+    instances: 1

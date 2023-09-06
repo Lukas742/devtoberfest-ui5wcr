@@ -1,0 +1,219 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Devtoberfest Movie Database",
+    "description": "Movie Database for SAP Devtoberfest 2023",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/api/v1/movies/": {
+      "get": {
+        "summary": "List of all movies",
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/movies/{id}": {
+      "get": {
+        "summary": "Details of a given movie",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/MovieDetails"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/movies/{id}/reviews": {
+      "get": {
+        "summary": "Reviews of a given movie",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Review"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new review",
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "description": "Create a new review",
+            "schema": {
+              "$ref": "#/definitions/Review"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Movie": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "1"
+        },
+        "title": {
+          "type": "string",
+          "example": "A Movie Title"
+        },
+        "year": {
+          "type": "number",
+          "example": 2000
+        },
+        "revenue": {
+          "type": "number",
+          "example": 1000000000
+        }
+      }
+    },
+    "MovieDetails": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "1"
+        },
+        "year": {
+          "type": "number",
+          "example": 2000
+        },
+        "title": {
+          "type": "string",
+          "example": "A Movie Title"
+        },
+        "revenue": {
+          "type": "number",
+          "example": 2923706026
+        },
+        "actors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "Actor Name"
+              },
+              "character": {
+                "type": "string",
+                "example": "Character Name"
+              }
+            }
+          }
+        },
+        "summary": {
+          "type": "string",
+          "example": "Lorem ipsum dolor sit..."
+        },
+        "rating": {
+          "type": "number",
+          "example": 3.7
+        }
+      }
+    },
+    "Review": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Reviewer Name"
+        },
+        "rating": {
+          "type": "number",
+          "example": 5
+        },
+        "comment": {
+          "type": "string",
+          "example": "Text Comment"
+        },
+        "timestamp": {
+          "type": "string",
+          "example": "2023-01-01T14:00:00Z"
+        }
+      },
+      "required": ["rating"]
+    },
+    "Error": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "example": "Error Description"
+        }
+      }
+    }
+  }
+}

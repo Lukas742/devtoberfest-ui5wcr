@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Jack",
+    "rating": 5,
+    "comment": "Top Gun: Maverick is a thrilling movie that captures the spirit of the original while also bringing something new to the table. The aerial sequences are breathtaking, the cast is excellent, and the story is engaging. A must-watch for any fan of the original.",
+    "timestamp": "2023-02-14T14:45:00Z"
+  },
+  {
+    "name": "Megan",
+    "rating": 4,
+    "comment": "Top Gun: Maverick is a great movie that pays homage to the original while also standing on its own. The cast is fantastic, the action is intense, and the emotional beats are well-earned. A great movie for anyone who loves action movies.",
+    "timestamp": "2023-04-30T16:30:00Z"
+  },
+  {
+    "name": "Connor",
+    "rating": 3,
+    "comment": "Top Gun: Maverick is a decent movie that delivers on the thrills and excitement that you would expect from a Top Gun movie. The plot can be a bit predictable at times, but the action and special effects are still impressive.",
+    "timestamp": "2023-07-05T18:15:00Z"
+  }
+]

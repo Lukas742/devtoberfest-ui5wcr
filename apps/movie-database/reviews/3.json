@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jessica",
+    "rating": 2,
+    "comment": "Avatar: The Way of Water is a visually stunning movie that unfortunately falls short in terms of story and character development. The plot feels convoluted and the new characters are not as interesting as the original ones.",
+    "timestamp": "2023-03-05T14:15:00Z"
+  },
+  {
+    "name": "Adam",
+    "rating": 3,
+    "comment": "Avatar: The Way of Water is a decent sequel that expands the world of Pandora but fails to capture the magic of the original. The movie has some exciting action scenes and beautiful visuals, but the story feels rushed and underdeveloped.",
+    "timestamp": "2023-04-20T16:10:00Z"
+  }
+]

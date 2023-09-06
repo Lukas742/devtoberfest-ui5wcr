@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sophia",
+    "rating": 4,
+    "comment": "Star Wars Ep. VII: The Force Awakens is a thrilling return to the galaxy far, far away. The movie has great action, humor, and new characters that are easy to root for. A must-watch for any Star Wars fan.",
+    "timestamp": "2023-01-20T16:20:00Z"
+  },
+  {
+    "name": "Daniel",
+    "rating": 3,
+    "comment": "Star Wars Ep. VII: The Force Awakens is a fun and entertaining movie that pays homage to the original trilogy. However, the plot feels a bit too familiar and some of the characters could have been developed more.",
+    "timestamp": "2023-03-07T18:50:00Z"
+  }
+]

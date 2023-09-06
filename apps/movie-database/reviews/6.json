@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Samantha",
+    "rating": 5,
+    "comment": "Avengers: Infinity War is a thrilling and epic movie that brings together all of the Marvel superheroes in an incredible battle against the villainous Thanos. The action is non-stop, the visuals are stunning, and the stakes have never been higher. A must-watch for any Marvel fan.",
+    "timestamp": "2023-01-12T14:45:00Z"
+  },
+  {
+    "name": "Jack",
+    "rating": 4,
+    "comment": "Avengers: Infinity War is a great superhero movie that delivers on all fronts. The story is engaging, the characters are well-developed, and the action is intense. The ending will leave you shocked and eagerly anticipating the next installment.",
+    "timestamp": "2023-02-23T17:20:00Z"
+  },
+  {
+    "name": "Megan",
+    "rating": 3,
+    "comment": "Avengers: Infinity War is a solid superhero movie that is definitely worth watching, but it's not without its flaws. The plot can be a bit convoluted at times, and some characters don't get as much screen time as they deserve. However, the action is still exciting, and the overall experience is enjoyable.",
+    "timestamp": "2023-03-29T19:55:00Z"
+  }
+]

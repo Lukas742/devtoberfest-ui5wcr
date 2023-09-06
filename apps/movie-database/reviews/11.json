@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Emily",
+    "rating": 5,
+    "comment": "Furious 7 is a high-octane action movie that delivers on all fronts. The stunts and special effects are breathtaking, the cast is excellent, and the emotional tribute to Paul Walker is touching. A must-watch for any action movie fan.",
+    "timestamp": "2023-02-10T13:45:00Z"
+  },
+  {
+    "name": "Ryan",
+    "rating": 4,
+    "comment": "Furious 7 is a great action movie that ramps up the intensity to new levels. The cast is fantastic, the action is thrilling, and the emotional payoff at the end is well worth the ride.",
+    "timestamp": "2023-04-25T15:30:00Z"
+  },
+  {
+    "name": "Samantha",
+    "rating": 3,
+    "comment": "Furious 7 is a solid action movie that is definitely worth watching, but it's not without its flaws. The plot can be a bit convoluted at times, and some of the action sequences feel a bit too over-the-top. However, the cast is still great and the movie is overall enjoyable.",
+    "timestamp": "2023-06-10T17:15:00Z"
+  }
+]

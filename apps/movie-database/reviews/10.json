@@ -1,0 +1,23 @@
+[
+  {
+    "movieId": 10,
+    "name": "Isabella",
+    "rating": 5,
+    "comment": "The Avengers is a groundbreaking superhero team-up movie that set the standard for the Marvel Cinematic Universe.",
+    "timestamp": "2023-03-12T16:45:00Z"
+  },
+  {
+    "movieId": 10,
+    "name": "Lucas",
+    "rating": 4,
+    "comment": "The Avengers is a fun and action-packed adventure, with great performances and witty dialogue.",
+    "timestamp": "2023-05-28T11:30:00Z"
+  },
+  {
+    "movieId": 10,
+    "name": "Sophie",
+    "rating": 3,
+    "comment": "While The Avengers is a fun ride, it's not quite as epic or emotionally resonant as some of the later Marvel movies.",
+    "timestamp": "2023-07-15T14:15:00Z"
+  }
+]

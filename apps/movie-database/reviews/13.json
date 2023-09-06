@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ashley",
+    "rating": 5,
+    "comment": "Frozen II is a fantastic sequel that expands on the world and characters of the first movie. The music is just as catchy and memorable, the animation is stunning, and the story is emotional and engaging. A must-watch for any Disney fan.",
+    "timestamp": "2023-02-18T12:45:00Z"
+  },
+  {
+    "name": "Tyler",
+    "rating": 4,
+    "comment": "Frozen II is a great movie that builds on the themes and characters of the first movie while also introducing new elements. The music is still excellent, the animation is beautiful, and the story is well-crafted and emotionally resonant.",
+    "timestamp": "2023-04-05T14:15:00Z"
+  },
+  {
+    "name": "Jessica",
+    "rating": 3,
+    "comment": "Frozen II is a solid sequel that is definitely worth watching, but it doesn't quite capture the magic of the first movie. The story can be a bit convoluted at times, and some of the new characters don't get as much development as they deserve. However, the music and animation are still top-notch.",
+    "timestamp": "2023-07-20T16:30:00Z"
+  }
+]
