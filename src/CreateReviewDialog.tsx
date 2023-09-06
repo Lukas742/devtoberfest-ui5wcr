@@ -100,7 +100,7 @@ export const CreateReviewDialog = (props) => {
 
   return createPortal(
     <Dialog
-      className="createReviewDialog"
+      className="footerNoPadding"
       open={open}
       onAfterClose={onClose}
       headerText={`Add your Review for "${movieTitle}"`}
@@ -168,7 +168,6 @@ export const CreateReviewDialog = (props) => {
             valueState={textAreaErrorState ? ValueState.Error : undefined}
             valueStateMessage={<span>Please add your review.</span>}
             rows={5}
-            maxlength={2000}
             growingMaxLines={10}
             growing
             required

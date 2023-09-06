@@ -32,13 +32,13 @@ const mockData = [
   },
 ];
 
-export const Home = (props) => {
+export const Home = () => {
   const containerRef = useRef(null);
   const responsivePaddingClass = useResponsiveContentPadding(
     containerRef.current!,
   );
   const navigate = useNavigate();
-  const { isLoading, error, data } = useQuery({
+  const { isLoading, data } = useQuery({
     queryKey: ["tableData"],
     queryFn: () =>
       fetch(
@@ -86,8 +86,12 @@ export const Home = (props) => {
           columns={
             <>
               <TableColumn>Title</TableColumn>
-              <TableColumn>Year</TableColumn>
-              <TableColumn>Revenue</TableColumn>
+              <TableColumn minWidth={600} demandPopin popinText="Year">
+                Year
+              </TableColumn>
+              <TableColumn minWidth={600} demandPopin popinText="Revenue">
+                Revenue
+              </TableColumn>
             </>
           }
           onRowClick={handleRowClick}

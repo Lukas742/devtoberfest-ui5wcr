@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
 
-import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
 import personPlaceholder from "@ui5/webcomponents-icons/dist/person-placeholder";
 import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
 import {
@@ -27,9 +26,15 @@ import {
   TitleLevel,
 } from "@ui5/webcomponents-react";
 import { ThemingParameters } from "@ui5/webcomponents-react-base";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
+import { ThemeContext } from "./App";
 import movieLogo1 from "./assets/moviePictograms/clapperboard_blue.png";
+import person1 from "./assets/personPictograms/person1.svg";
+import person2 from "./assets/personPictograms/person2.png";
+import person3 from "./assets/personPictograms/person3.png";
+import person4 from "./assets/personPictograms/person4.png";
+import person5 from "./assets/personPictograms/person5.png";
 //todo later
 import movieLogo1dark from "./assets/moviePictograms/clapperboard_blue_dark.png";
 import movieLogo2 from "./assets/moviePictograms/clapperboard_green.png";
@@ -38,22 +43,19 @@ import movieLogo3 from "./assets/moviePictograms/clapperboard_orange.png";
 import movieLogo3dark from "./assets/moviePictograms/clapperboard_orange_dark.png";
 import movieLogo4 from "./assets/moviePictograms/clapperboard_purple.png";
 import movieLogo4dark from "./assets/moviePictograms/clapperboard_purple_dark.png";
-import person1 from "./assets/personPictograms/person1.svg";
-import person2 from "./assets/personPictograms/person2.png";
-import person3 from "./assets/personPictograms/person3.png";
-import person4 from "./assets/personPictograms/person4.png";
-import person5 from "./assets/personPictograms/person5.png";
+import person1dark from "./assets/personPictograms/person1_dark.svg";
+import person2dark from "./assets/personPictograms/person2_dark.png";
+import person3dark from "./assets/personPictograms/person3_dark.png";
+import person4dark from "./assets/personPictograms/person4_dark.png";
+import person5dark from "./assets/personPictograms/person5_dark.png";
+
 import { CreateReviewDialog } from "./CreateReviewDialog";
 
 import { revenueFormatter } from "./utils";
 
-setTheme("sap_horizon");
+const movieAvatars = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
 
-const movieAvatars = [
-  movieLogo1,
-  movieLogo2,
-  movieLogo3,
-  movieLogo4,
+const movieAvatarsDark = [
   movieLogo1dark,
   movieLogo2dark,
   movieLogo3dark,
@@ -62,11 +64,23 @@ const movieAvatars = [
 
 const personAvatars = [person1, person2, person3, person4, person5];
 
-export const Details = (props) => {
-  const { movieId } = useParams();
-  const [dialogOpen, setDialogOpen] = useState(false);
+const personAvatarsDark = [
+  person1dark,
+  person2dark,
+  person3dark,
+  person4dark,
+  person5dark,
+];
 
-  const { isLoading, error, data } = useQuery({
+export const Details = () => {
+  const { movieId } = useParams();
+  const theme = useContext(ThemeContext);
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const isDarkMode = theme.includes("dark") || theme.includes("hcb");
+  const movieImages = isDarkMode ? movieAvatarsDark : movieAvatars;
+  const personImages = isDarkMode ? personAvatarsDark : personAvatars;
+
+  const { data } = useQuery({
     queryKey: [`details-${movieId}`],
     queryFn: () =>
       fetch(
@@ -75,11 +89,7 @@ export const Details = (props) => {
         return res.json();
       }),
   });
-  const {
-    // isLoading,
-    // error,
-    data: reviewData,
-  } = useQuery({
+  const { data: reviewData } = useQuery({
     queryKey: [`reviews-${movieId}`],
     queryFn: () =>
       fetch(
@@ -103,7 +113,7 @@ export const Details = (props) => {
         image={
           <Avatar icon={pictureIcon}>
             {data?.id != null && (
-              <img src={movieAvatars[data?.id % 4]} alt="Movie Thumbnail" />
+              <img src={movieImages[data?.id % 4]} alt="Movie Thumbnail" />
             )}
           </Avatar>
         }
@@ -139,7 +149,7 @@ export const Details = (props) => {
                   style={{ marginInlineEnd: "0.5rem" }}
                   shape={AvatarShape.Square}
                 >
-                  <img src={personAvatars[index % 6]} alt="Picture of Actor" />
+                  <img src={personImages[index % 6]} alt="Picture of Actor" />
                 </Avatar>
                 <FlexBox direction={FlexBoxDirection.Column}>
                   <Text

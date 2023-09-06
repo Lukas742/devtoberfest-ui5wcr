@@ -70,6 +70,9 @@ App:
 ```css
 #root {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--sapBackgroundColor);
 }
 ```
 
@@ -81,6 +84,16 @@ body {
 }
 ```
 
+6.1 Set to use Horizon (explain later)
+
+```html
+<script data-ui5-config type="application/json">
+  {
+    "theme": "sap_horizon"
+  }
+</script>
+```
+
 7. Install React Router
 
 ```sh
@@ -90,24 +103,24 @@ npm i react-router-dom
 7.1. `BrowserRouter` in `main.tsx`
 7.2. Routes in `App.tsx` & container div
 
-```
-  <div style={{ height: "calc(100% - 44px)", overflow: "auto" }}>
-    <Routes>
-      <Route path="details/:movieId" element={<Details />} />
-      <Route path="/" element={<Home />} />
-    </Routes>
-  </div>
+```tsx
+<div style={{ overflow: "auto", flexGrow: 1 }}>
+  <Routes>
+    <Route path="details/:movieId" element={<Details />} />
+    <Route path="/" element={<Home />} />
+  </Routes>
+</div>
 ```
 
 7.3. Create empty components and import in `App.tsx`
 7.4. Navigate to `/details` (URL)
 7.5. Navigate home by logo click
 
-```
-  const navigate = useNavigate();
-  const handleLogoClick = () => {
-    navigate("/");
-  };
+```ts
+const navigate = useNavigate();
+const handleLogoClick = () => {
+  navigate("/");
+};
 ```
 
 8. Home
@@ -125,8 +138,12 @@ Render:
     columns={
       <>
         <TableColumn>Title</TableColumn>
-        <TableColumn>Year</TableColumn>
-        <TableColumn>Revenue</TableColumn>
+        <TableColumn minWidth={600} demandPopin popinText="Year">
+          Year
+        </TableColumn>
+        <TableColumn minWidth={600} demandPopin popinText="Revenue">
+          Revenue
+        </TableColumn>
       </>
     }
   >
@@ -542,7 +559,7 @@ const handleDialogClose = () => {
       </Label>
     }
   >
-    <TextArea rows={5} maxlength={2000} growingMaxLines={10} growing required />
+    <TextArea rows={5} growingMaxLines={10} growing required />
   </FormItem>
 </Form>
 ```
@@ -567,13 +584,13 @@ const handleDialogClose = () => {
 
 ```tsx
  <Dialog
-      className="createReviewDialog"
+      className="footerNoPadding"
 ```
 
 `App.css`
 
 ```css
-.createReviewDialog::part(footer) {
+.footerNoPadding::part(footer) {
   padding-inline: 0;
 }
 ```
@@ -650,7 +667,6 @@ const [fields, dispatch] = useReducer<
       value={fields.comment}
       data-field="comment"
       rows={5}
-      maxlength={2000}
       growingMaxLines={10}
       growing
       required
@@ -773,6 +789,104 @@ const handleSave = () => {
 };
 ```
 
-todo: search-icon input
-todo: table responsive
-todo: hide images until ui5-webcomponent ready?
+20. Theming `App.tx`
+
+```ts
+import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
+```
+
+```ts
+const defaultTheme = "sap_horizon";
+export const ThemeContext = createContext(defaultTheme);
+```
+
+```ts
+const [theme, setThemeState] = useState(defaultTheme);
+```
+
+```tsx
+    <ThemeContext.Provider value={theme}>
+```
+
+```tsx
+<ShellBarItem icon={paletteIcon} onClick={handleShellBarItemClick} />
+```
+
+```tsx
+<Popover
+  ref={popoverRef}
+  placementType={PopoverPlacementType.Bottom}
+  className="contentNoPadding"
+>
+  <List mode={ListMode.SingleSelect} onSelectionChange={handleThemeSwitch}>
+    {themes.map((item) => (
+      <StandardListItem
+        data-key={item.key}
+        key={item.key}
+        selected={theme === item.key}
+      >
+        {item.name}
+      </StandardListItem>
+    ))}
+  </List>
+</Popover>
+```
+
+--> className (`App.css`):
+
+```css
+.contentNoPadding::part(content) {
+  padding: 0;
+}
+```
+
+--> handler
+
+```tsx
+const handleShellBarItemClick = (e) => {
+  const { targetRef } = e.detail;
+  popoverRef.current.showAt(targetRef);
+};
+
+const handleThemeSwitch = (e) => {
+  const { targetItem } = e.detail;
+  setTheme(targetItem.dataset.key);
+  setThemeState(targetItem.dataset.key);
+};
+```
+
+21. Dark-Mode pictograms (`Details.tsx`)
+
+```ts
+const movieAvatars = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
+
+const movieAvatarsDark = [
+  movieLogo1dark,
+  movieLogo2dark,
+  movieLogo3dark,
+  movieLogo4dark,
+];
+
+const personAvatars = [person1, person2, person3, person4, person5];
+
+const personAvatarsDark = [
+  person1dark,
+  person2dark,
+  person3dark,
+  person4dark,
+  person5dark,
+];
+```
+
+```ts
+const theme = useContext(ThemeContext);
+const isDarkMode = theme.includes("dark") || theme.includes("hcb");
+const movieImages = isDarkMode ? movieAvatarsDark : movieAvatars;
+const personImages = isDarkMode ? personAvatarsDark : personAvatars;
+```
+
+```tsx
+<img src={movieImages[data?.id % 4]} alt="Movie Thumbnail" />
+
+<img src={personImages[index % 6]} alt="Picture of Actor" />
+```
