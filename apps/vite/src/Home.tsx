@@ -14,7 +14,7 @@ import { useResponsiveContentPadding } from "@ui5/webcomponents-react-base";
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { revenueFormatter } from "./utils";
+import { revenueFormatter } from "./utils.ts";
 import searchIcon from "@ui5/webcomponents-icons/dist/search";
 
 const mockData = [

@@ -10,8 +10,8 @@ import {
 import { createContext, useRef, useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
-import { Details } from "./Details";
-import { Home } from "./Home";
+import { Details } from "./Details.tsx";
+import { Home } from "./Home.tsx";
 import paletteIcon from "@ui5/webcomponents-icons/dist/palette";
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
 

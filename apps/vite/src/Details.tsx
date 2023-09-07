@@ -28,7 +28,7 @@ import {
 import { ThemingParameters } from "@ui5/webcomponents-react-base";
 import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
-import { ThemeContext } from "./App";
+import { ThemeContext } from "./App.tsx";
 import movieLogo1 from "./assets/moviePictograms/clapperboard_blue.png";
 import person1 from "./assets/personPictograms/person1.svg";
 import person2 from "./assets/personPictograms/person2.png";
@@ -49,9 +49,9 @@ import person3dark from "./assets/personPictograms/person3_dark.png";
 import person4dark from "./assets/personPictograms/person4_dark.png";
 import person5dark from "./assets/personPictograms/person5_dark.png";
 
-import { CreateReviewDialog } from "./CreateReviewDialog";
+import { CreateReviewDialog } from "./CreateReviewDialog.tsx";
 
-import { revenueFormatter } from "./utils";
+import { revenueFormatter } from "./utils.ts";
 
 const movieAvatars = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
 
