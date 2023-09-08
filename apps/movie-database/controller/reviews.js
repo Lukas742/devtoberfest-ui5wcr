@@ -59,7 +59,7 @@ router.post("/:id/reviews", (req, res) => {
 
   try {
     const newReview = {
-      name: name ?? null,
+      name: name || null,
       rating: parsedRating,
       comment: comment ?? null,
       timestamp: new Date().toISOString(),
