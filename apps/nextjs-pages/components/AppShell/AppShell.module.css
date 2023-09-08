@@ -1,0 +1,14 @@
+.appShell {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--sapBackgroundColor);
+}
+
+.scrollContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    position: relative;
+}

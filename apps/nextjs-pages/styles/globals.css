@@ -1,0 +1,19 @@
+:not(:defined) {
+  display: none;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.footerNoPadding::part(footer) {
+  padding-inline: 0;
+}
+
+.contentNoPadding::part(content) {
+  padding: 0;
+}
