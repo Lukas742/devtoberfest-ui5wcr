@@ -12,7 +12,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import { Details } from "./Details.tsx";
 import { Home } from "./Home.tsx";
-import paletteIcon from "@ui5/webcomponents-icons/dist/palette";
+import paletteIcon from "@ui5/webcomponents-icons/dist/palette.js";
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
 
 const defaultTheme = "sap_horizon";

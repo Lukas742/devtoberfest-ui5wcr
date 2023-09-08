@@ -24,12 +24,16 @@ const initialFields = {
   comment: "",
 };
 
-function reducer(state, action) {
-  const { field, value } = action;
+function reducer(state: {
+  name: string;
+  rating: number;
+  comment: string;
+}, action: { field: string; value: string | number; } | "reset") {
   if (action === "reset") {
     console.log("reset");
     return initialFields;
   }
+  const { field, value } = action;
   return { ...state, [field]: value };
 }
 
@@ -38,14 +42,7 @@ export const CreateReviewDialog = (props) => {
   const textAreaRef = useRef(null);
   const ratingIndicatorRef = useRef(null);
   const [textAreaErrorState, setTextAreaErrorState] = useState(false);
-  const [fields, dispatch] = useReducer<
-    {
-      name: string;
-      rating: number;
-      comment: string;
-    },
-    never
-  >(reducer, initialFields);
+  const [fields, dispatch] = useReducer(reducer, initialFields);
   const queryClient = useQueryClient();
   const mutation = useMutation({
     mutationFn: async (newFields) => {
