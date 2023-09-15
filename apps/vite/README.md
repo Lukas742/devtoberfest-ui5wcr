@@ -263,6 +263,12 @@ const handleSearchInput = (e) => {
 };
 ```
 
+```ts
+`useEffect(()=>{
+setFilteredData(data}
+,[data])
+```
+
 ```tsx
 <Input
   placeholder="Search Movies"
