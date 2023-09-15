@@ -293,6 +293,19 @@ const { isLoading, error, data } = useQuery({
 });
 ```
 
+add Interface
+
+```ts
+interface Details {
+  id: string;
+  title: string;
+  revenue: number;
+  actors: string[];
+  summary: string;
+  rating: number;
+  year: number;
+}
+```
 15. Implement ObjectPage
 
 ```tsx
