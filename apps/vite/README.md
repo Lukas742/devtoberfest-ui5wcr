@@ -244,13 +244,6 @@ const { isLoading, error, data } = useQuery({
     }),
 });
 ```
-
-12. wrap `Table` in `BusyIndicator`
-
-```tsx
-  <BusyIndicator active={isLoading}>
-```
-
 13. Implement frontend search
 
 ```ts
