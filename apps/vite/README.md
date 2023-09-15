@@ -234,7 +234,7 @@ const queryClient = new QueryClient();
 11. Read all movies list from backend
 
 ```ts
-const { isLoading, error, data } = useQuery({
+const { isLoading, error, data=[] } = useQuery({
   queryKey: ["tableData"],
   queryFn: () =>
     fetch(
