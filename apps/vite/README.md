@@ -418,6 +418,8 @@ import person2 from "./assets/personPictograms/person2.png";
 import person3 from "./assets/personPictograms/person3.png";
 import person4 from "./assets/personPictograms/person4.png";
 import person5 from "./assets/personPictograms/person5.png";
+
+const personAvatars = [person1, person2, person3, person4, person5];
 ```
 
 17.3 use in Avatar
