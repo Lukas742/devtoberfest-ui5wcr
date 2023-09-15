@@ -363,10 +363,10 @@ import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
 15.3 import images and create list
 
 ```ts
-import movieLogo1 from "./assets/281304_Clapperboard_R_blue.png";
-import movieLogo2 from "./assets/281304_Clapperboard_R_green.png";
-import movieLogo3 from "./assets/281304_Clapperboard_R_orange.png";
-import movieLogo4 from "./assets/281304_Clapperboard_R_purple.png";
+import movieLogo1 from "./assets/moviePictograms/clapperboard_blue.png";
+import movieLogo2 from "./assets/moviePictograms/clapperboard_green.png";
+import movieLogo3 from "./assets/moviePictograms/clapperboard_orange.png";
+import movieLogo4 from "./assets/moviePictograms/clapperboard_purple.png";
 
 const movieLogos = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
 ```
