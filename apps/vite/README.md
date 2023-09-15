@@ -30,9 +30,13 @@ If you are developing a production application, we recommend updating the config
 
 1. Scaffold
 
+> Start terminal in SAPDevelop
+
 ```sh
 npm create vite@latest devtoberfest-ui5wcr -- --template react-ts
 ```
+
+> install deps and show `npm run dev`
 
 2. Install deps
 
@@ -45,7 +49,7 @@ npm install prettier -D
 4. Add ThemeProvider and Assets
 
 ```
-import '@ui5/webcomponents-react/dist/Assets';
+import '@ui5/webcomponents-react/dist/Assets.js';
 ```
 
 5. Delete Content of main.tsx & add ShellBar
