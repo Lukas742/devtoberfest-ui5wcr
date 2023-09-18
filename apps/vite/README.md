@@ -126,16 +126,11 @@ const handleLogoClick = () => {
 ```
 
 8. Home
-
-8.1 replace div with FlexBox
-8.2 add Input
 8.3 add Table & mockData
 
 Render:
 
 ```jsx
-<FlexBox direction={FlexBoxDirection.Column}>
-  <Input />
   <Table
     columns={
       <>
@@ -159,7 +154,6 @@ Render:
       );
     })}
   </Table>
-</FlexBox>
 ```
 
 mock:
@@ -230,7 +224,7 @@ const queryClient = new QueryClient();
 11. Read all movies list from backend
 
 ```ts
-const { isLoading, error, data=[] } = useQuery({
+const { data=[] } = useQuery({
   queryKey: ["tableData"],
   queryFn: () =>
     fetch(
@@ -239,39 +233,6 @@ const { isLoading, error, data=[] } = useQuery({
       return res.json();
     }),
 });
-```
-13. Implement frontend search
-
-```ts
-const [filteredData, setFilteredData] = useState(data);
-```
-
-```ts
-const handleSearchInput = (e) => {
-  const { value } = e.target;
-  setFilteredData(
-    data.filter(
-      (item) =>
-        item.title.toLowerCase().includes(value.toLowerCase()) ||
-        String(item.year).includes(value),
-    ),
-  );
-};
-```
-
-```ts
-`useEffect(()=>{
-setFilteredData(data}
-,[data])
-```
-
-```tsx
-<Input
-  placeholder="Search Movies"
-  onInput={handleSearchInput}
-  icon={<Icon name={searchIcon} />}
-  style={{ width: "300px" }}
-/>
 ```
 
 14. Read details from backend
@@ -302,7 +263,7 @@ interface Details {
   year: number;
 }
 ```
-15. Implement ObjectPage
+# 15. Implement ObjectPage
 
 ```tsx
 <ObjectPage style={{ height: "100%" }}>
@@ -312,7 +273,7 @@ interface Details {
 </ObjectPage>
 ```
 
-15.1 Add `image` & `headerTitle`
+## Add `image`
 
 ```ts
 import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
@@ -322,7 +283,33 @@ import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
     <ObjectPage
       style={{ height: "100%" }}
       image={<Avatar icon={pictureIcon}></Avatar>}
-      showTitleInHeaderContent
+     ..
+    >
+```
+
+## Add `headerTitle`
+
+```tsx
+headerTitle={<DynamicPageTitle header={data?.title} />}
+```
+
+## Add `headerContent`
+
+```tsx
+      headerContent={
+        <DynamicPageHeader>
+          <FlexBox direction={FlexBoxDirection.Column}>
+            <Link>Official Trailer</Link>
+            <Link>Buy Online</Link>
+          </FlexBox>
+        </DynamicPageHeader>
+      }
+```
+
+## Enhance Title and add `showTitleInHeaderContent`
+
+```tsx
+showTitleInHeaderContent
       headerTitle={
         <DynamicPageTitle
           header={data?.title}
@@ -339,17 +326,6 @@ import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
           <RatingIndicator />
         </DynamicPageTitle>
       }
-      // todo remove after ui5wcr update
-      headerContent={<DynamicPageHeader />}
-    >
-      <ObjectPageSection id="summary" titleText="Summary"></ObjectPageSection>
-      <ObjectPageSection
-        id="actors"
-        titleText="Main Actors"
-      ></ObjectPageSection>
-      <ObjectPageSection id="reviews" titleText="Reviews"></ObjectPageSection>
-    </ObjectPage>
-  );
 ```
 
 15.2 Add movie images
