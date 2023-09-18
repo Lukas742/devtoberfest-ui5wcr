@@ -774,7 +774,7 @@ const handleSave = () => {
 };
 ```
 
-20. Theming `App.tx`
+# Theming `App.tx`
 
 ```ts
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
@@ -840,7 +840,7 @@ const handleThemeSwitch = (e) => {
 };
 ```
 
-21. Dark-Mode pictograms (`Details.tsx`)
+# Dark-Mode pictograms (`Details.tsx`)
 
 ```ts
 const movieAvatars = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
