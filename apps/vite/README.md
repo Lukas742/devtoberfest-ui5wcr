@@ -273,20 +273,6 @@ interface Details {
 </ObjectPage>
 ```
 
-## Add `image`
-
-```ts
-import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
-```
-
-```tsx
-    <ObjectPage
-      style={{ height: "100%" }}
-      image={<Avatar icon={pictureIcon}></Avatar>}
-     ..
-    >
-```
-
 ## Add `headerTitle`
 
 ```tsx
@@ -306,6 +292,20 @@ headerTitle={<DynamicPageTitle header={data?.title} />}
       }
 ```
 
+## Add `image`
+
+```ts
+import pictureIcon from "@ui5/webcomponents-icons/dist/picture";
+```
+
+```tsx
+    <ObjectPage
+      style={{ height: "100%" }}
+      image={<Avatar icon={pictureIcon}></Avatar>}
+     ..
+    >
+```
+
 ## Enhance Title and add `showTitleInHeaderContent`
 
 ```tsx
@@ -323,66 +323,31 @@ showTitleInHeaderContent
           }
           showSubHeaderRight={false}
         >
-          <RatingIndicator />
+          {data?.rating && <RatingIndicator value={data?.rating} />}
         </DynamicPageTitle>
       }
 ```
 
-15.2 Add movie images
-
---> copy paste images in `assets/moviePictograms`
-
-15.3 import images and create list
-
-```ts
-import movieLogo1 from "./assets/moviePictograms/clapperboard_blue.png";
-import movieLogo2 from "./assets/moviePictograms/clapperboard_green.png";
-import movieLogo3 from "./assets/moviePictograms/clapperboard_orange.png";
-import movieLogo4 from "./assets/moviePictograms/clapperboard_purple.png";
-
-const movieLogos = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
-```
-
-15.4 apply to `Avatar`
+# Add Summary content
 
 ```tsx
-<img src={movieLogos[data?.id % 4]} alt="Movie Thumbnail" />
+<Text>{data?.summary}</Text>
 ```
 
-16. Add Summary content
+# Add Main Actors content
+
+## Map actors
 
 ```tsx
-<Text>data?.summary</Text>
+    {data?.actors.map((actor) => (
+          <FlexBox direction={FlexBoxDirection.Column} key={actor.name}>
+            <Text style={{fontFamily: ThemingParameters.sapFontBoldFamily}}>{actor.name}</Text>
+            <Label>{actor.character}</Label>
+          </FlexBox>
+        ))}
 ```
 
-17. Add Main Actors content
-
-17.1 Add Section
-
-```tsx
-<Grid defaultSpan="XL6 L6 M6 S12">
-  {data?.actors?.map((item, index) => (
-    <FlexBox alignItems={FlexBoxAlignItems.Center} key={item.name}>
-      <Avatar
-        size={AvatarSize.L}
-        style={{ marginInlineEnd: "0.5rem" }}
-        shape={AvatarShape.Square}
-      >
-        <img src={personAvatars[index % 6]} alt="Picture of Actor" />
-      </Avatar>
-      <FlexBox direction={FlexBoxDirection.Column}>
-        <Text style={{ fontFamily: ThemingParameters.sapFontBoldFamily }}>
-          {item.name}
-        </Text>
-        <Label>{item.character}</Label>
-      </FlexBox>
-    </FlexBox>
-  ))}
-</Grid>
-```
-
-17.2
---> copy paste images in `assets/personPictograms`
+## Add image
 
 ```ts
 import person1 from "./assets/personPictograms/person1.svg";
@@ -394,10 +359,30 @@ import person5 from "./assets/personPictograms/person5.png";
 const personAvatars = [person1, person2, person3, person4, person5];
 ```
 
-17.3 use in Avatar
+```tsx
+        {data?.actors.map((actor, index) => (
+          <FlexBox alignItems={FlexBoxAlignItems.Center} key={actor.name}>
+            <Avatar
+              size={AvatarSize.L}
+              style={{ marginInlineEnd: "0.5rem" }}
+              shape={AvatarShape.Square}
+            >
+              <img src={personAvatars[index % 6]} alt="Picture of Actor" />
+            </Avatar>
+            <FlexBox direction={FlexBoxDirection.Column} key={actor.name}>
+              <Text style={{ fontFamily: ThemingParameters.sapFontBoldFamily }}>
+                {actor.name}
+              </Text>
+              <Label>{actor.character}</Label>
+            </FlexBox>
+          </FlexBox>
+        ))}
+```
+
+## Add Grid
 
 ```tsx
-<img src={personAvatars[index % 6]} alt="Picture of Actor" />
+<Grid defaultSpan="XL6 L6 M6 S12">
 ```
 
 18. Add Reviews Content
