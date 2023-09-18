@@ -28,7 +28,7 @@ If you are developing a production application, we recommend updating the config
 
 # Notes:
 
-1. Scaffold (before Recording)
+# Scaffold (before Recording)
 
 > Start terminal in SAPDevelop
 
@@ -43,14 +43,17 @@ npm install @ui5/webcomponents-react @ui5/webcomponents @ui5/webcomponents-fiori
 npm install prettier -D
 ```
 
-3. Run App `npm run dev`
-4. Add ThemeProvider and Assets
+# Demo start
+
+# Run App `npm run dev`
+
+# Add ThemeProvider and Assets
 
 ```
 import '@ui5/webcomponents-react/dist/Assets.js';
 ```
 
-5. Delete Content of main.tsx & add ShellBar
+# Delete Content of main.tsx & add ShellBar
 
 ```
   <ShellBar
@@ -65,7 +68,7 @@ import '@ui5/webcomponents-react/dist/Assets.js';
   />
 ```
 
-6. Replace styles in App.css
+# Replace styles in App.css
 
 App:
 
@@ -86,7 +89,7 @@ body {
 }
 ```
 
-6.1 Set to use Horizon (explain later)
+## Set to use Horizon (explain later)
 
 ```html
 <script data-ui5-config type="application/json">
@@ -96,14 +99,11 @@ body {
 </script>
 ```
 
-7. Install React Router
+## Add React Router
 
-```sh
-npm i react-router-dom
-```
-
-7.1. `BrowserRouter` in `main.tsx`
-7.2. Routes in `App.tsx` & container div
+ `<BrowserRouter>` in `main.tsx`
+ 
+## Routes in `App.tsx` & container div
 
 ```tsx
 <div style={{ overflow: "auto", flexGrow: 1 }}>
@@ -114,9 +114,11 @@ npm i react-router-dom
 </div>
 ```
 
-7.3. Create empty components and import in `App.tsx`
-7.4. Navigate to `/details` (URL)
-7.5. Navigate home by logo click
+## Create empty components and import in `App.tsx`
+
+## Navigate to `/details/1` (URL)
+
+## Navigate home by logo click
 
 ```ts
 const navigate = useNavigate();
@@ -125,8 +127,9 @@ const handleLogoClick = () => {
 };
 ```
 
-8. Home
-8.3 add Table & mockData
+# Home component
+
+## add Table & mockData
 
 Render:
 
@@ -175,9 +178,9 @@ const mockData = [
 ];
 ```
 
-8.4 `useResponsiveContentPadding` + `paddingBlock: "1rem"`
+## `useResponsiveContentPadding` + `paddingBlock: "1rem"`
 
-8.5 create format function `utils.ts`
+## create format function `utils.ts`
 
 ```ts
 export const revenueFormatter = new Intl.NumberFormat("en-US", {
@@ -192,10 +195,11 @@ export const revenueFormatter = new Intl.NumberFormat("en-US", {
 <TableCell>{revenueFormatter.format(movie.revenue)}</TableCell>
 ```
 
-9. Make Table interactive
+# Make Table interactive
 
-9.1 Add `type={TableRowType.Active}` to row & add `data-id={movie.id}`
-9.2 Add handler with navigate
+## Add `type={TableRowType.Active}` to row & add `data-id={movie.id}`
+
+## Add handler with navigate
 
 ```ts
 const handleRowClick = (e) => {
@@ -204,13 +208,7 @@ const handleRowClick = (e) => {
 };
 ```
 
-10. Add TanStack Query
-
-```sh
-npm i @tanstack/react-query
-```
-
-10.1. `main.tsx`
+# Fetch data / Integrate TanStack Query
 
 ```ts
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -221,7 +219,7 @@ const queryClient = new QueryClient();
 <QueryClientProvider client={queryClient}>
 ```
 
-11. Read all movies list from backend
+# Read all movies list from backend
 
 ```ts
 const { data=[] } = useQuery({
@@ -235,7 +233,7 @@ const { data=[] } = useQuery({
 });
 ```
 
-14. Read details from backend
+# Read details from backend
 
 ```ts
 const { movieId } = useParams();
