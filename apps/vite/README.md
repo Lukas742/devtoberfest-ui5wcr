@@ -385,17 +385,15 @@ const personAvatars = [person1, person2, person3, person4, person5];
 <Grid defaultSpan="XL6 L6 M6 S12">
 ```
 
-18. Add Reviews Content
+# Add Reviews Content
 
-18.1 Fetch review data
+## Fetch review data
 
 ```ts
 const {
-  // isLoading,
-  // error,
   data: reviewData,
 } = useQuery({
-  queryKey: [`tableData${movieId}`],
+  queryKey: [`tableData${movieId}Review`],
   queryFn: () =>
     fetch(
       `https://devtoberfest-movie-database.cfapps.eu10-004.hana.ondemand.com/api/v1/movies/${movieId}/reviews`,
@@ -405,20 +403,23 @@ const {
 });
 ```
 
-18.2 Add value to RatingIndicator
-
-todo: backend?
+## Show review data
 
 ```tsx
-<RatingIndicator
-  value={reviewData?.reduce((acc, cur) => {
-    acc += cur.rating;
-    return acc / 2;
-  }, 0)}
-/>
+  {reviewData?.map((item) => (<div>{item.comment}</div>))}
 ```
 
-18.3 Implement Timeline
+## Add Timeline
+
+```tsx
+        <Timeline>
+          {reviewData?.map((item) => {
+            return <TimelineItem>{item.comment}</TimelineItem>;
+          })}
+        </Timeline>
+```
+
+## Improve Timeline
 
 ```tsx
 <Timeline>
@@ -448,7 +449,9 @@ todo: backend?
 </Timeline>
 ```
 
-18.4 Implement custom header with create-review btn
+# Create Review
+
+> Cut here and copy/paste implementation
 
 ```tsx
 <ObjectPageSection
