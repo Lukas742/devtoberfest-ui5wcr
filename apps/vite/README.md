@@ -843,15 +843,6 @@ const handleThemeSwitch = (e) => {
 # Dark-Mode pictograms (`Details.tsx`)
 
 ```ts
-const movieAvatars = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
-
-const movieAvatarsDark = [
-  movieLogo1dark,
-  movieLogo2dark,
-  movieLogo3dark,
-  movieLogo4dark,
-];
-
 const personAvatars = [person1, person2, person3, person4, person5];
 
 const personAvatarsDark = [
@@ -866,12 +857,9 @@ const personAvatarsDark = [
 ```ts
 const theme = useContext(ThemeContext);
 const isDarkMode = theme.includes("dark") || theme.includes("hcb");
-const movieImages = isDarkMode ? movieAvatarsDark : movieAvatars;
 const personImages = isDarkMode ? personAvatarsDark : personAvatars;
 ```
 
 ```tsx
-<img src={movieImages[data?.id % 4]} alt="Movie Thumbnail" />
-
 <img src={personImages[index % 6]} alt="Picture of Actor" />
 ```
