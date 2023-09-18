@@ -180,6 +180,15 @@ const mockData = [
 
 ## `useResponsiveContentPadding` + `paddingBlock: "1rem"`
 
+
+```ts
+       <div
+      ref={containerRef}
+      className={responsivePaddingClass}
+      style={{ paddingBlock: "1rem" }}
+    >
+```
+
 ## create format function `utils.ts`
 
 ```ts
