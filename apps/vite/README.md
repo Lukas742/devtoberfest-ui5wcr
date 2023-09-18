@@ -28,7 +28,7 @@ If you are developing a production application, we recommend updating the config
 
 # Notes:
 
-1. Scaffold
+1. Scaffold (before Recording)
 
 > Start terminal in SAPDevelop
 
@@ -36,16 +36,14 @@ If you are developing a production application, we recommend updating the config
 npm create vite@latest devtoberfest-ui5wcr -- --template react-ts
 ```
 
-> install deps and show `npm run dev`
-
-2. Install deps
+2. Install all deps (routing, data fetching, wcr)
 
 ```sh
-npm install @ui5/webcomponents-react @ui5/webcomponents @ui5/webcomponents-fiori
+npm install @ui5/webcomponents-react @ui5/webcomponents @ui5/webcomponents-fiori react-router-dom @tanstack/react-query
 npm install prettier -D
 ```
 
-3. Run App
+3. Run App `npm run dev`
 4. Add ThemeProvider and Assets
 
 ```
@@ -172,14 +170,12 @@ const mockData = [
     id: "1",
     title: "Avatar",
     year: 2009,
-    //todo
     revenue: 1337,
   },
   {
     id: "2",
     title: "Avengers: Endgame",
     year: 2019,
-    //todo
     revenue: 7742,
   },
 ];
