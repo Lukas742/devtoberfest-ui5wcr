@@ -69,14 +69,15 @@ npm install prettier -D
 ```css
 body {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
 }
 
 #root {
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--sapBackgroundColor);
 }
+
 
 ```
 
@@ -181,7 +182,7 @@ const { data=[] } = useQuery({
     >
 ```
 
-## create format function `utils.ts`
+## create format function
 
 ```ts
 export const revenueFormatter = new Intl.NumberFormat("en-US", {
@@ -210,6 +211,15 @@ const handleRowClick = (e) => {
 ```
 
 
+# 15. DETAILS: Implement ObjectPage
+
+```tsx
+<ObjectPage style={{ height: "100%" }}>
+  <ObjectPageSection id="summary" titleText="Summary"></ObjectPageSection>
+  <ObjectPageSection id="actors" titleText="Main Actors"></ObjectPageSection>
+  <ObjectPageSection id="reviews" titleText="Reviews"></ObjectPageSection>
+</ObjectPage>
+```
 
 # Read details from backend
 
@@ -238,15 +248,6 @@ interface Details {
   rating: number;
   year: number;
 }
-```
-# 15. Implement ObjectPage
-
-```tsx
-<ObjectPage style={{ height: "100%" }}>
-  <ObjectPageSection id="summary" titleText="Summary"></ObjectPageSection>
-  <ObjectPageSection id="actors" titleText="Main Actors"></ObjectPageSection>
-  <ObjectPageSection id="reviews" titleText="Reviews"></ObjectPageSection>
-</ObjectPage>
 ```
 
 ## Add `headerTitle`
@@ -764,6 +765,15 @@ const [theme, setThemeState] = useState(defaultTheme);
 
 ```tsx
 <ShellBarItem icon={paletteIcon} onClick={handleShellBarItemClick} />
+```
+
+```ts
+const themes = [
+  { key: "sap_horizon", name: "Morning Horizon (Light)" },
+  { key: "sap_horizon_dark", name: "Evening Horizon (Dark)" },
+  { key: "sap_horizon_hcb", name: "Horizon High Contrast Black" },
+  { key: "sap_horizon_hcw", name: "Horizon High Contrast White" },
+];
 ```
 
 ```tsx
