@@ -747,33 +747,16 @@ const handleSave = () => {
 # Theming `App.tx`
 
 ```ts
-import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
-```
-
-```ts
-const defaultTheme = "sap_horizon";
-export const ThemeContext = createContext(defaultTheme);
-```
-
-```ts
-const [theme, setThemeState] = useState(defaultTheme);
-```
-
-```tsx
-    <ThemeContext.Provider value={theme}>
-```
-
-```tsx
-<ShellBarItem icon={paletteIcon} onClick={handleShellBarItemClick} />
-```
-
-```ts
 const themes = [
   { key: "sap_horizon", name: "Morning Horizon (Light)" },
   { key: "sap_horizon_dark", name: "Evening Horizon (Dark)" },
   { key: "sap_horizon_hcb", name: "Horizon High Contrast Black" },
   { key: "sap_horizon_hcw", name: "Horizon High Contrast White" },
 ];
+```
+
+```tsx
+<ShellBarItem icon={paletteIcon} onClick={handleShellBarItemClick} />
 ```
 
 ```tsx
@@ -811,6 +794,23 @@ const handleShellBarItemClick = (e) => {
   const { targetRef } = e.detail;
   popoverRef.current.showAt(targetRef);
 };
+
+```ts
+import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
+```
+
+```ts
+const defaultTheme = "sap_horizon";
+export const ThemeContext = createContext(defaultTheme);
+```
+
+```ts
+const [theme, setThemeState] = useState(defaultTheme);
+```
+
+```tsx
+    <ThemeContext.Provider value={theme}>
+```
 
 const handleThemeSwitch = (e) => {
   const { targetItem } = e.detail;
