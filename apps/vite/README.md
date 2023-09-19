@@ -794,6 +794,7 @@ const handleShellBarItemClick = (e) => {
   const { targetRef } = e.detail;
   popoverRef.current.showAt(targetRef);
 };
+```
 
 ```ts
 import { setTheme } from "@ui5/webcomponents-base/dist/config/Theme.js";
@@ -812,6 +813,7 @@ const [theme, setThemeState] = useState(defaultTheme);
     <ThemeContext.Provider value={theme}>
 ```
 
+```ts
 const handleThemeSwitch = (e) => {
   const { targetItem } = e.detail;
   setTheme(targetItem.dataset.key);
@@ -821,8 +823,13 @@ const handleThemeSwitch = (e) => {
 
 # Dark-Mode pictograms (`Details.tsx`)
 
+
 ```ts
-const personAvatars = [person1, person2, person3, person4, person5];
+import person1dark from "./assets/personPictograms/person1_dark.svg";
+import person2dark from "./assets/personPictograms/person2_dark.png";
+import person3dark from "./assets/personPictograms/person3_dark.png";
+import person4dark from "./assets/personPictograms/person4_dark.png";
+import person5dark from "./assets/personPictograms/person5_dark.png";
 
 const personAvatarsDark = [
   person1dark,
