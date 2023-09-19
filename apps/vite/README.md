@@ -33,13 +33,13 @@ If you are developing a production application, we recommend updating the config
 > Start terminal in SAPDevelop
 
 ```sh
-npm create vite@latest devtoberfest-ui5wcr -- --template react-ts
+npx degit SAP/ui5-webcomponents-react/examples/vite-ts#main devtoberfest-ui5wcr
 ```
 
 2. Install all deps (routing, data fetching, wcr)
 
 ```sh
-npm install @ui5/webcomponents-react @ui5/webcomponents @ui5/webcomponents-fiori react-router-dom @tanstack/react-query
+npm install react-router-dom @tanstack/react-query
 npm install prettier -D
 ```
 
@@ -47,11 +47,7 @@ npm install prettier -D
 
 # Run App `npm run dev`
 
-# Add ThemeProvider and Assets
-
-```
-import '@ui5/webcomponents-react/dist/Assets.js';
-```
+# Explain ThemeProvider and Assets
 
 # Delete Content of main.tsx & add ShellBar
 
@@ -68,35 +64,20 @@ import '@ui5/webcomponents-react/dist/Assets.js';
   />
 ```
 
-# Replace styles in App.css
-
-App:
-
-```css
-#root {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--sapBackgroundColor);
-}
-```
-
-index:
+# Replace styles in index.css
 
 ```css
 body {
   margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
-```
 
-## Set to use Horizon (explain later)
+#root {
+  display: flex;
+  flex-direction: column;
+}
 
-```html
-<script data-ui5-config type="application/json">
-  {
-    "theme": "sap_horizon"
-  }
-</script>
 ```
 
 ## Add React Router
@@ -129,7 +110,7 @@ const handleLogoClick = () => {
 
 # Home component
 
-## add Table & mockData
+## add Table Columns
 
 Render:
 
@@ -147,7 +128,38 @@ Render:
       </>
     }
   >
-    {mockData.map((movie) => {
+  </Table>
+```
+
+## Fetch data / Integrate TanStack Query
+
+```ts
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+const queryClient = new QueryClient();
+```
+
+```
+<QueryClientProvider client={queryClient}>
+```
+
+## Read all movies list from backend
+
+```ts
+const { data=[] } = useQuery({
+  queryKey: ["tableData"],
+  queryFn: () =>
+    fetch(
+      "https://devtoberfest-movie-database.cfapps.eu10-004.hana.ondemand.com/api/v1/movies/",
+    ).then((res) => {
+      return res.json();
+    }),
+});
+```
+
+## Add to table 
+
+```ts
+{data.map((movie) => {
       return (
         <TableRow key={movie.id}>
           <TableCell>{movie.title}</TableCell>
@@ -156,26 +168,6 @@ Render:
         </TableRow>
       );
     })}
-  </Table>
-```
-
-mock:
-
-```ts
-const mockData = [
-  {
-    id: "1",
-    title: "Avatar",
-    year: 2009,
-    revenue: 1337,
-  },
-  {
-    id: "2",
-    title: "Avengers: Endgame",
-    year: 2019,
-    revenue: 7742,
-  },
-];
 ```
 
 ## `useResponsiveContentPadding` + `paddingBlock: "1rem"`
@@ -217,30 +209,7 @@ const handleRowClick = (e) => {
 };
 ```
 
-# Fetch data / Integrate TanStack Query
 
-```ts
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-const queryClient = new QueryClient();
-```
-
-```
-<QueryClientProvider client={queryClient}>
-```
-
-# Read all movies list from backend
-
-```ts
-const { data=[] } = useQuery({
-  queryKey: ["tableData"],
-  queryFn: () =>
-    fetch(
-      "https://devtoberfest-movie-database.cfapps.eu10-004.hana.ondemand.com/api/v1/movies/",
-    ).then((res) => {
-      return res.json();
-    }),
-});
-```
 
 # Read details from backend
 
