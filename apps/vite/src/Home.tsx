@@ -17,21 +17,6 @@ import { useQuery } from "@tanstack/react-query";
 import { revenueFormatter } from "./utils.ts";
 import searchIcon from "@ui5/webcomponents-icons/dist/search";
 
-const mockData = [
-  {
-    id: "1",
-    title: "Avatar",
-    year: 2009,
-    revenue: 1337,
-  },
-  {
-    id: "2",
-    title: "Avengers: Endgame",
-    year: 2019,
-    revenue: 7742,
-  },
-];
-
 export const Home = () => {
   const containerRef = useRef(null);
   const responsivePaddingClass = useResponsiveContentPadding(

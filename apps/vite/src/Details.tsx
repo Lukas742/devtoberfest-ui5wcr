@@ -16,6 +16,7 @@ import {
   FlexBoxJustifyContent,
   Grid,
   Label,
+  Link,
   ObjectPage,
   ObjectPageSection,
   RatingIndicator,
@@ -35,7 +36,7 @@ import person2 from "./assets/personPictograms/person2.png";
 import person3 from "./assets/personPictograms/person3.png";
 import person4 from "./assets/personPictograms/person4.png";
 import person5 from "./assets/personPictograms/person5.png";
-//todo later
+
 import movieLogo1dark from "./assets/moviePictograms/clapperboard_blue_dark.png";
 import movieLogo2 from "./assets/moviePictograms/clapperboard_green.png";
 import movieLogo2dark from "./assets/moviePictograms/clapperboard_green_dark.png";
@@ -53,6 +54,27 @@ import { CreateReviewDialog } from "./CreateReviewDialog.tsx";
 
 import { revenueFormatter } from "./utils.ts";
 
+interface Actor {
+  name: string;
+  character: string;
+}
+
+interface Details {
+  id: string;
+  title: string;
+  revenue: number;
+  actors: Actor[];
+  summary: string;
+  rating: number;
+  year: number;
+}
+
+interface Review {
+  comment: string;
+  name: string;
+  rating: number;
+  timestamp: string;
+}
 const movieAvatars = [movieLogo1, movieLogo2, movieLogo3, movieLogo4];
 
 const movieAvatarsDark = [
@@ -80,7 +102,7 @@ export const Details = () => {
   const movieImages = isDarkMode ? movieAvatarsDark : movieAvatars;
   const personImages = isDarkMode ? personAvatarsDark : personAvatars;
 
-  const { data } = useQuery({
+  const { data } = useQuery<Details>({
     queryKey: [`details-${movieId}`],
     queryFn: () =>
       fetch(
@@ -89,7 +111,7 @@ export const Details = () => {
         return res.json();
       }),
   });
-  const { data: reviewData } = useQuery({
+  const { data: reviewData } = useQuery<Review>({
     queryKey: [`reviews-${movieId}`],
     queryFn: () =>
       fetch(
@@ -134,8 +156,14 @@ export const Details = () => {
             <RatingIndicator readonly value={data?.rating} />
           </DynamicPageTitle>
         }
-        // todo remove after ui5wcr update
-        headerContent={<DynamicPageHeader />}
+        headerContent={
+          <DynamicPageHeader>
+            <FlexBox direction={FlexBoxDirection.Column}>
+              <Link>Official Trailer</Link>
+              <Link>Buy Online</Link>
+            </FlexBox>
+          </DynamicPageHeader>
+        }
       >
         <ObjectPageSection id="summary" titleText="Summary">
           <Text>{data?.summary}</Text>
