@@ -12,6 +12,7 @@ import {
   FlexBoxJustifyContent,
   Grid,
   Label,
+  Link,
   ObjectPage,
   ObjectPageSection,
   RatingIndicator,
@@ -149,7 +150,6 @@ export default function MovieDetails(props: InferGetServerSidePropsType<typeof g
 
   return <>
     <ObjectPage
-      style={{ height: "100%" }}
       image={
         <Avatar icon={pictureIcon}>
           {movieDetails?.id != null && (
@@ -174,8 +174,12 @@ export default function MovieDetails(props: InferGetServerSidePropsType<typeof g
           <RatingIndicator readonly value={movieDetails?.rating} />
         </DynamicPageTitle>
       }
-      // todo remove after ui5wcr update
-      headerContent={<DynamicPageHeader />}
+      headerContent={<DynamicPageHeader>
+        <FlexBox direction={FlexBoxDirection.Column}>
+          <Link>Official Trailer</Link>
+          <Link>Buy Online</Link>
+        </FlexBox>
+      </DynamicPageHeader>}
     >
       <ObjectPageSection id="summary" titleText="Summary">
         <Text>{movieDetails?.summary}</Text>
